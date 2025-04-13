@@ -2,7 +2,6 @@ SoftwareType
 {
     Name "Surveillance Camera System"
     Description "The Backbone of Residential, Commercial, and Governmental Security"
-    Random 1
     OptimalDevTime 35
     OneClient False
     InHouse False
