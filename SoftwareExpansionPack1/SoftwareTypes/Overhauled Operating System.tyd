@@ -467,13 +467,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
-					Name		"Themes"
-					DevTime		4
-					Level		1
-					CodeArt		0.5
-					Submarkets	[ 0; 0; 1 ]
-					}
-					{
 					Name		"Widgets"
 					DevTime		3
 					Level		1
@@ -488,6 +481,39 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Submarkets	[ 1; 0; 0 ]
 					}
 				]
+			}
+			{
+				Name "2D Visualizations"
+				Spec 2D
+				DevTime 4
+				CodeArt 1
+			    Submarkets[1; 0; 1]
+				Features
+					[
+						{
+							Name		"Themes"
+							DevTime		6
+							Level		2
+							CodeArt		0.5
+							Submarkets	[ 0; 0; 2 ]
+						}
+
+						{
+							Name		"Wallpapers"
+							DevTime		4
+							Level		1
+							CodeArt		0.5
+							Submarkets	[ 0; 0; 1 ]
+						}
+
+						{
+							Name		"Icon Graphics"
+							DevTime		4
+							Level		1
+							CodeArt		0.5
+							Submarkets	[ 0; 0; 1 ]
+						}
+					]
 			}
 			{
 			Name		"3D rendering"

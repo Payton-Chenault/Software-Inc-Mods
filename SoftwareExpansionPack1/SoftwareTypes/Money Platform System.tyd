@@ -19,7 +19,8 @@ SoftwareType
                     Retention 24
                     Iterative 0.5
                     Submarkets [1; 4; 3]
-                    Server 0.01
+                    Server 0.05
+                    TimeScale 1
                     NameGenerator moneyplatformonlinenaminggen
                 }
                 {
@@ -30,7 +31,9 @@ SoftwareType
                     Retention 36
                     Iterative 0.7
                     Server 0.01
+                    TimeScale 1
                     Submarkets [2; 2; 4]
+                    NameGenerator moneyplatformonlinenaminggen
                 }
             ]
         Features
@@ -38,6 +41,8 @@ SoftwareType
                 {
                     Name "System"
                     Spec System
+                    CodeArt 1
+                    DevTime 5
                     Submarkets [1; 1; 1]
                     Features
                         [
@@ -61,7 +66,7 @@ SoftwareType
 
                             {
                                 Name "Microservice Architecture Support"
-                                Description "Allows Systems to Scale Independently"\
+                                Description "Allows Systems to Scale Independently"
                                 Level 1
                                 DevTime 3
                                 CodeArt 1
@@ -82,6 +87,8 @@ SoftwareType
                 {
                     Name "Security"
                     Spec Security
+                    CodeArt 1
+                    DevTime 4
                     Submarkets[1; 0; 0]
                     Features
                         [
@@ -109,6 +116,7 @@ SoftwareType
                                 Description "Locks the account after x amount of failed login attempts"
                                 Level 1
                                 DevTime 3
+                                CodeArt 1
                                 Submarkets [1; 0; 0]
                             }
 
@@ -119,25 +127,30 @@ SoftwareType
                                 Unlock 1985
                                 DevTime 4
                                 Level 2
+                                CodeArt 1
                                 Submarkets[1; 2; 1]
                             }
 
                             {
                                 Name "Biometric Login"
                                 Description "Allows users to log in via Biometrics"
-                                SoftwareCategories[Individual; 2000]
+                                SoftwareCategories[Individual]
                                 DevTime 6
+                                Unlock 2000
                                 Level 2
-                                SubmarketNames[2, 2, 0]
+                                CodeArt 1
+                                Submarkets[2; 2; 0]
                             }
 
                             {
                                 Name "RADIUS Support"
                                 Description "Utilizes RADIUS for organizational transaction operation security"
-                                SoftwareCategories[Business; 1985]
-                                DevTIme 6
+                                SoftwareCategories[Business]
+                                Unlock 1985
+                                DevTime 6
                                 Level 2
-                                SubmarketNames[2; 2; 2]
+                                CodeArt 1
+                                Submarkets[2; 2; 2]
                             }
                         ]
                 }
@@ -145,10 +158,12 @@ SoftwareType
                 {
                     Name "Network"
                     Spec Network
+                    CodeArt 1
                     Optional True
                     Submarkets [0; 1; 1]
                     Unlock 1985
                     Server 0.01
+                    DevTime 3
                     Features
                         [
                             {
@@ -184,7 +199,7 @@ SoftwareType
                                 DevTime 8
                                 CodeArt 1
                                 Level 2
-                                Submarkets[2, 2, 3]
+                                Submarkets[2; 2; 3]
                             }
 
                             {
@@ -201,6 +216,8 @@ SoftwareType
                 {
                     Name "UI"
                     Spec UI
+                    CodeArt 1
+                    DevTime 3
                     Submarkets [0; 1; 0]
                     Features
                         [
@@ -219,7 +236,7 @@ SoftwareType
                                 DevTime 3
                                 CodeArt 1
                                 Level 1
-                                SubmarketNames[0; 1; 0]
+                                Submarkets[0; 1; 0]
                             }
 
                             {
@@ -228,7 +245,7 @@ SoftwareType
                                 DevTime 3
                                 CodeArt 1
                                 Level 1
-                                SubmarketNames[0; 1; 0]
+                                Submarkets[0; 1; 0]
                             }
 
                             {
@@ -237,16 +254,16 @@ SoftwareType
                                 DevTime 5
                                 CodeArt 1
                                 Level 2
-                                SubmarketNames[0; 2; 0]
+                                Submarkets[0; 2; 0]
                             }
 
                             {
                                 Name "Voice UI Integration"
                                 Description "Perform tasks utilizing voice commands"
-                                DevTIme 5
+                                DevTime 5
                                 CodeArt 1
                                 Level 2
-                                SubmarketNames[-1; 2; 0]
+                                Submarkets[-1; 2; 0]
                             }
                         ]
                 }
