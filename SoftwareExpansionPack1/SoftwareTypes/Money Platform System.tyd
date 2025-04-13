@@ -5,7 +5,7 @@ SoftwareType
         OneClient False
         InHouse False
         Random 0.25
-        OptimalDevTime 36
+        OptimalDevTime 31
         Unlock 1985
         OSSupport [Computer; Phone]
         SubmarketNames[Security; Ease of Use; Availability]
@@ -18,7 +18,7 @@ SoftwareType
                     Popularity 0.75
                     Retention 24
                     Iterative 0.5
-                    Submarkets [1; 4; 3]
+                    Submarkets [2; 1; 3]
                     Server 0.05
                     TimeScale 1
                     NameGenerator moneyplatformnamegen
@@ -32,7 +32,7 @@ SoftwareType
                     Iterative 0.7
                     Server 0.01
                     TimeScale 1
-                    Submarkets [2; 2; 4]
+                    Submarkets [1; 2; 2]
                     NameGenerator moneyplatformnamegen
                 }
             ]
@@ -42,7 +42,7 @@ SoftwareType
                     Name "System"
                     Spec System
                     CodeArt 1
-                    DevTime 5
+                    DevTime 3
                     Submarkets [1; 1; 1]
                     Features
                         [
@@ -50,7 +50,7 @@ SoftwareType
                                 Name "Audit Logging"
                                 Description "Records all actions for fraud investigation or rollback"
                                 Level 1
-                                DevTime 4
+                                DevTime 2
                                 CodeArt 1
                                 Submarkets[1; 0; 0]
                             }
@@ -59,7 +59,7 @@ SoftwareType
                                 Name "Rate Limiting & Throttling"
                                 Description "Prevents abuse or DDoS Attacks"
                                 Level 1
-                                DevTime 4
+                                DevTime 3
                                 CodeArt 1
                                 Submarkets[1; 0; 1]
                             }
@@ -68,7 +68,7 @@ SoftwareType
                                 Name "Microservice Architecture Support"
                                 Description "Allows Systems to Scale Independently"
                                 Level 1
-                                DevTime 3
+                                DevTime 2
                                 CodeArt 1
                                 Submarkets[0; 0; 1]
                             }
@@ -77,7 +77,7 @@ SoftwareType
                                 Name "User Behavior Tracking"
                                 Description "Monitors Patterns to detect fraud or improve UX"
                                 Level 2
-                                DevTime 5
+                                DevTime 6
                                 CodeArt 1
                                 Submarkets[2; 2; 0]
                             }
@@ -96,7 +96,7 @@ SoftwareType
                                 Name "End to End Encryption"
                                 Description "Ensures data passed over devices are secure"
                                 Level 1
-                                DevTime 3
+                                DevTime 2
                                 CodeArt 1
                                 Submarkets [1; 0; 0]
                             }
@@ -105,8 +105,8 @@ SoftwareType
                                 Name "Two Factor Authentication"
                                 Description "Double checks the user is who they say they are"
                                 Level 1
-                                DevTime 3 
-                                Submarkets [1; -1; 0]
+                                DevTime 2 
+                                Submarkets [1; 0; 0]
                                 CodeArt 1
                                 SoftwareCategories[Individual]
                             }
@@ -125,21 +125,21 @@ SoftwareType
                                 Description "Provides the user real-time alerts for various actions"
                                 Server 0.001
                                 Unlock 1985
-                                DevTime 4
+                                DevTime 3
                                 Level 2
                                 CodeArt 1
-                                Submarkets[1; 2; 1]
+                                Submarkets[1; 2; 0]
                             }
 
                             {
                                 Name "Biometric Login"
                                 Description "Allows users to log in via Biometrics"
                                 SoftwareCategories[Individual]
-                                DevTime 6
+                                DevTime 4
                                 Unlock 2000
                                 Level 2
                                 CodeArt 1
-                                Submarkets[2; 2; 0]
+                                Submarkets[3; 2; 0]
                             }
 
                             {
@@ -147,10 +147,10 @@ SoftwareType
                                 Description "Utilizes RADIUS for organizational transaction operation security"
                                 SoftwareCategories[Business]
                                 Unlock 1985
-                                DevTime 6
+                                DevTime 4
                                 Level 2
                                 CodeArt 1
-                                Submarkets[2; 2; 2]
+                                Submarkets[2; 1; 1]
                             }
                         ]
                 }
@@ -160,7 +160,7 @@ SoftwareType
                     Spec Network
                     CodeArt 1
                     Optional True
-                    Submarkets [0; 1; 1]
+                    Submarkets [0; 2; 3]
                     Unlock 1985
                     Server 0.01
                     DevTime 3
@@ -171,35 +171,35 @@ SoftwareType
                                 Description "No downtime is acceptable in the world of financess"
                                 DevTime 4
                                 CodeArt 1
-                                Level 1
-                                Submarkets[1; 0; 1]
+                                Level 2
+                                Submarkets[1; 1; 3]
                             }
 
                             {
                                 Name "Offline Notification Queue"
                                 Description "Sends alerts when servers are back to being operational"
-                                DevTime 4
+                                DevTime 3
                                 CodeArt 1
                                 Level 1
-                                Submarkets[0; 1; 1]
+                                Submarkets[0; 1; 3]
                             }
 
                             {
                                 Name "Load Balancing"
                                 Description "Distributes Traffic Efficiently Under Heavy Usage"
-                                DevTime 6
+                                DevTime 5
                                 CodeArt 1
                                 Level 2
-                                Submarkets[2; 2; 2]
+                                Submarkets[2; 1; 3]
                             }
 
                             {
                                 Name "Cloud Sync"
                                 Unlock 2000
-                                DevTime 8
+                                DevTime 5
                                 CodeArt 1
                                 Level 2
-                                Submarkets[2; 2; 3]
+                                Submarkets[0; 1; 3]
                             }
 
                             {
@@ -207,8 +207,8 @@ SoftwareType
                                 Description "Live Account Updates Without Refresh"
                                 Level 2
                                 CodeArt 1
-                                DevTime 5
-                                Submarkets[0; 2; 2]
+                                DevTime 3
+                                Submarkets[0; 1; 3]
                             }
                         ]
                 }
@@ -224,8 +224,8 @@ SoftwareType
                             {
                                 Name "Transaction History Table"
                                 Description "A table showing prior transactions"
-                                DevTime 4
-                                CodeArt 1
+                                DevTime 3
+                                CodeArt .9
                                 Level 1
                                 Submarkets[0; 1; 0]
                             }
@@ -234,7 +234,7 @@ SoftwareType
                                 Name "Confirmation Popups"
                                 Description "Popups that warn the user before attempting financial actions"
                                 DevTime 3
-                                CodeArt 1
+                                CodeArt .9
                                 Level 1
                                 Submarkets[0; 1; 0]
                             }
@@ -242,8 +242,8 @@ SoftwareType
                             {
                                 Name "Quick Access Shortcuts"
                                 Description "Tabs that allows quick access to a multitude of common items"
-                                DevTime 3
-                                CodeArt 1
+                                DevTime 2
+                                CodeArt .9
                                 Level 1
                                 Submarkets[0; 1; 0]
                             }
@@ -251,8 +251,8 @@ SoftwareType
                             {
                                 Name "Interactive Financial Timeline"
                                 Description "Scrollable visual history of transactions"
-                                DevTime 5
-                                CodeArt 1
+                                DevTime 3
+                                CodeArt .8
                                 Level 2
                                 Submarkets[0; 2; 0]
                             }
@@ -260,10 +260,10 @@ SoftwareType
                             {
                                 Name "Voice UI Integration"
                                 Description "Perform tasks utilizing voice commands"
-                                DevTime 5
+                                DevTime 4
                                 CodeArt 1
                                 Level 2
-                                Submarkets[-1; 2; 0]
+                                Submarkets[0; 2; 0]
                             }
                         ]
                 }

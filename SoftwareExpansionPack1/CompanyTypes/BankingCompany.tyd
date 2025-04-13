@@ -10,13 +10,6 @@ CompanyType
             [
                 {
                     Software "Online Banking Platform"
-                    Category "Business"
-                    Chance 1
-                }
-
-                {
-                    Software "Online Banking Platform"
-                    Category "Individual"
                     Chance 1
                 }
             ]
