@@ -21,7 +21,7 @@ SoftwareType
                     Submarkets [1; 4; 3]
                     Server 0.05
                     TimeScale 1
-                    NameGenerator moneyplatformonlinenaminggen
+                    NameGenerator moneyplatformnamegen
                 }
                 {
                     Name "Individual"
@@ -33,7 +33,7 @@ SoftwareType
                     Server 0.01
                     TimeScale 1
                     Submarkets [2; 2; 4]
-                    NameGenerator moneyplatformonlinenaminggen
+                    NameGenerator moneyplatformnamegen
                 }
             ]
         Features
