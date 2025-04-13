@@ -1,0 +1,23 @@
+CompanyType
+    {
+        Specialization "Financial Tools"
+        PerYear 0.2
+        Min 3
+        Max 6
+        Frameworks True
+        NameGenerator bankingcompanynamegen
+        Types
+            [
+                {
+                    Software "Online Banking Platform"
+                    Category "Business"
+                    Chance 1
+                }
+
+                {
+                    Software "Online Banking Platform"
+                    Category "Individual"
+                    Chance 1
+                }
+            ]
+    }
