@@ -1,0 +1,15 @@
+CompanyType
+    {
+        Specialization "Security Tools"
+        PerYear 0.2
+        Min 3
+        Max 6
+        Frameworks True
+        Types
+            [
+                {
+                    Software "Surveillance Camera System"
+                    Chance 1
+                }
+            ]
+    }

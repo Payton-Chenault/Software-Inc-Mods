@@ -1,0 +1,12 @@
+if (Product.GetVar("Backdoor", true)) 
+{
+    Product.DevCompany.(Product.Userbase)
+    if(Random() * Product.Userbase > 1000000 * Product.Category.Popularity)
+    {
+        LaunchLawsuit("Illegal Backdoor", Product.Sum, 1);
+        Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+        Product.Userbase = Product.Userbase * 0.05;
+        Product.KillAwareness();
+        Product.PutVar("Backdoor", false);
+    }
+}
