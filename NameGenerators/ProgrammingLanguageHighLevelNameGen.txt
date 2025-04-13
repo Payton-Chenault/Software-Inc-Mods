@@ -1,0 +1,33 @@
+-start(base)
+Cloud
+Script
+Logic
+App
+Zen
+High
+Nova
+Soft
+Meta
+Flow
+-base(end)
+ Frame 
+ Stream 
+ Lang 
+ Stack 
+ Pulse 
+ Block 
+ Cast 
+ Loop 
+ Bridge 
+ Core 
+-end(stop)
+JS
+Pro
+Max
+FX
+OS
+Lite
+One
+Next
+Cloud
+Edge

@@ -5,7 +5,7 @@ CompanyType
         Min 3
         Max 6
         Frameworks True
-        NameGenerator securitycompanynamegen
+        NameGenerator SecurityCompNameGen
         Types
             [
                 {

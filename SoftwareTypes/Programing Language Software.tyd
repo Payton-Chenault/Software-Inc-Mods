@@ -1,0 +1,37 @@
+SoftwareType 
+{
+    Name "Programming Language"
+    Description "Every Program Needs To Start Somewhere Right?"
+    Random 0.1
+    OptimalDevTime 25
+    OSSupport Computer
+    OneClient False
+    InHouse True
+    SubmarketNames [Speed; Effieciency; Safety]
+    Categories
+        [
+            {
+                Name "Low Level"
+                Description "Low Level Programming Languages Interact Closely With Hardware"
+                Popularity 0.7
+                Submarkets [4; 1; 0]
+                TimeScale 0.8
+                Retention 48
+                IdealPrice 75
+                Iterative 1
+                NameGenerator ProgrammingLanguageLowLevelNameGen
+            }
+
+            {
+                Name "High Level"
+                Description "High Level Programming Languages typically sit on top of other proccess to operate"
+                Popularity 0.9
+                Submarkets [0; 2 ; 4]
+                TimeScale 1
+                Retention 36
+                IdealPrice 100
+                Iterative 1
+                NameGenerator ProgrammingLanguageHighLevelNameGen
+            }
+        ]
+}

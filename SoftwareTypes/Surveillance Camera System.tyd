@@ -11,7 +11,7 @@ SoftwareType
     Retention 24
     Iterative 0.75
     OSSupport Computer
-    NameGenerator surveillancecamerasystem
+    NameGenerator SurveillanceCameraSystemNameGen
     SubmarketNames [Residential; Commercial; Government]
 
     Features

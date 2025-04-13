@@ -1,15 +1,15 @@
 CompanyType
     {
-        Specialization "Financial Tools"
+        Specialization "Programming Tools"
         PerYear 0.2
         Min 3
         Max 6
         Frameworks True
-        NameGenerator BankingCompNameGen
+        NameGenerator ProgrammingCompNameGen
         Types
             [
                 {
-                    Software "Online Banking Platform"
+                    Software "Programming Language"
                     Chance 1
                 }
             ]

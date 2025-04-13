@@ -1,0 +1,33 @@
+-start(base)
+Bit
+Core
+Hex
+Bare
+Volt
+Mem
+Sys
+Iron
+Byte
+Deep
+-base(end, stop)
+ Code
+ Stack
+ Wire
+ Thread
+ Loop
+ Pointer
+ Frame
+ Op
+ Map
+ Kernel
+-end(stop)
+ X
+ Pro
+ Trase
+ Lite
+ OS
+ Edge
+ One
+ RT
+ NX
+ Zero
