@@ -251,15 +251,6 @@ SoftwareType
                         Level 2
                         Submarkets [2; 2; 2]
                     }
-                    {
-                        Name "Backdoor"
-                        Description "Implement a backdoor to security feeds to tap into classified information to sell, but beware..."
-                        DevTime 12
-                        CodeArt 1
-                        Level 3
-                        Script_EndOfDay "/Scripts/BackdoorScript.txt"
-                        Submarkets 0
-                    }
                 ]
             }
             {
