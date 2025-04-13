@@ -12,437 +12,361 @@ SoftwareType
     Iterative 0.75
     OSSupport Computer
     NameGenerator surveillancecamerasystem
-    SubmarketNames [Residential; Commercial ; Government]
-    Features 
-        [
-            {
-                Name "System"
-                Spec System
-                DevTime 3
-                CodeArt 1
-                Submarkets [1; 1; 1]
-                Features
-                    [
-                        {
-                            Name "Live Feed Access"
-                            Description "Allows the user to check in on their pets from their computer!"
-                            Level 1
-                            DevTime 3
-                            CodeArt 1
-                            Submarkets [1; 1; 1]
-                        }
-                        {
-                            Name "Motion Detection Alerts"
-                            Description "Notifies the user when motion is detected"
-                            Level 1
-                            DevTime 3
-                            CodeArt 1
-                            Submarkets [1; 1; 1]
-                        }
-                        {
-                            Name "Basic Recording"
-                            Description "Provides the user the ability to store short-term footage on-site"
-                            DevTime 2
-                            CodeArt 1
-                            Level 1
-                            Submarkets [1; 0; 0]
-                        }
-                        {
-                            Name "Mobile App Support"
-                            Description "Allows the user to manage their cameras from anywhere!"
-                            DevTime 5
-                            CodeArt 1
-                            Level 2
-                            Submarkets [2; 0; 0]
-                        }
-                        {
-                            Name "One Way Audio"
-                            Description "Allows the user to hear through the camera"
-                            DevTime 4
-                            CodeArt 1
-                            Level 2
-                            Submarkets [2; 1; 0]
-                        }
-                        {
-                            Name "Smart Home Integration"
-                            Description "Allows the user to connect the camera system to their home assistants"
-                            DevTime 5
-                            CodeArt 1
-                            Level 2
-                            Submarkets [2; 0; 0]
-                        }
-                        {
-                            Name "Facial Recognition (Basic)"
-                            Description "Allows for basic facial recognitions"
-                            DevTime 5
-                            CodeArt 1
-                            Level 2
-                            Submarkets [2; 0; 0]
-                        }
-                        {
-                            Name "Multi-Camera Support"
-                            Description "Allows for multiple cameras to be set up on one system"
-                            DevTime 4
-                            CodeArt 1
-                            Level 1
-                            Submarkets [1; 1; 1]
-                        }
-                        {
-                            Name "Customer Traffic Heatmaps"
-                            Description "Analyzes consumer traffic flow in camera view"
-                            DevTime 5
-                            CodeArt 1
-                            Level 2
-                            Submarkets[0; 2; 0]
-                        }
-                        {
-                            Name "Incident Flagging"
-                            Description "Flags suspicious clips for organizations to analyze"
-                            DevTime 3
-                            CodeArt 1
-                            Level 1
-                            Submarkets [0; 2; 2]
-                        }
-                        {
-                            Name "Threat Detection"
-                            Description "Recognizes illegal doings or dangerous behavior"
-                            DevTime 4
-                            CodeArt 1
-                            Level 1
-                            Submarkets [0; 1; 2]
-                        }
-                        {
-                            Name "Facial Recognition (High Accuracy)"
-                            Description "Recognizes faces that can then be used for criminal database lookups"
-                            DevTime 4
-                            CodeArt 1
-                            Level 2
-                            Submarkets [0; 1; 2]
-                        }
-                        {
-                            Name "License Plate Recognition"
-                            Description "Recognizes license plates and can analyze them automatically"
-                            DevTime 6
-                            CodeArt 1
-                            Level 2
-                            Submarkets [0; 0; 2]
-                        }
-                        {
-                            Name "Mass Surveillance Support"
-                            Description "Allows the user to handle hundreds to thousands of video feeds"
-                            DevTime 4
-                            CodeArt 1
-                            Level 2
-                            Submarkets [0; 0; 2]
-                        }
-                    ]
-            }
-            {
-                Name "Security"
-                Spec Security
-                Description "Features that enchances the security of the system"
-                DevTime 2
-                CodeArt 1
-                Submarkets[1; 1; 1]
-                Features
-                [
-                    {
-                        Name "User Access Levels"
-                        Description "Allows user to assign cameras based on different roles"
-                        DevTime 4
-                        CodeArt 1
-                        Level 2
-                        Submarkets [0; 1; 2]
-                    }
-                    {
-                        Name "Audit Trail"
-                        Description "Logs who accessed or modified footage"
-                        DevTime 3
-                        CodeArt 1
-                        Level 1
-                        Submarkets [0; 1; 1]
-                    }
-                    {
-                        Name "3DES Encryption"
-                        Description "Encrypts data via a Data Encryption System algorithm, good for transactions"
-                        DevTime 5
-                        CodeArt 1
-                        Level 1
-                        Submarkets [1; 1; 0]
-                    }
-                    {
-                        Name "RSA Encryption 1024"
-                        Description "Encrypts data via encryption algorithm that utilizes a 1024 bit long key"
-                        DevTime 5
-                        CodeArt 1
-                        Level 1
-                        Submarkets [1; 1; 1]
-                    }
-                    {
-                        Name "RSA Encryption 2048"
-                        Description "Encrypts data via encryption algorithm that utilizes a 2048 bit long key"
-                        DevTime 5
-                        CodeArt 1
-                        Level 2
-                        Submarkets [2; 2; 2]
-                    }
-                    {
-                        Name "Diffie-Hellman Encryption"
-                        Description "Encrypts data via a public key exchange used to exchange private keys"
-                        DevTime 2
-                        CodeArt 1
-                        Level 1
-                        Submarkets [1; 0; 0]
-                    }
-                    {
-                        Name "ElGamal Encryption"
-                        Description "Encrypts data via generation of different ciphertext keys"
-                        DevTime 5
-                        CodeArt 1
-                        Level 2
-                        Submarkets [0; 1; 2]
-                    }
-                    {
-                        Name "Blowfish Encryption"
-                        Description "Encrypts data via a 16-round Feistel cipher"
-                        DevTime 3
-                        CodeArt 1
-                        Level 1
-                        Submarkets [0; 1; 1]
-                    }
-                    {
-                        Name "Twofish Encryption"
-                        Description "Encrypts data via the Situation Box (S-box) method"
-                        DevTime 5
-                        CodeArt 1
-                        Level 2
-                        Submarkets [0; 1; 2]
-                    }
-                    {
-                        Name "AES Encryption"
-                        Description "Encrypts data via a series of transformations and using a secret-key cryptography known as Rijndael. Used by the U.S. Government"
-                        DevTime 6
-                        CodeArt 1
-                        Level 2
-                        Submarkets [0; 2; 2]
-                    }
-                    {
-                        Name "IDEA Encryption"
-                        Description "Encrypts data via a series of rounds, utilizing subsitution and transposition to scramble data"
-                        DevTime 5
-                        CodeArt 1
-                        Level 1
-                        Submarkets [1; 1; 1]
-                    }
-                    {
-                        Name "RC6 Encryption"
-                        Description "Encrypts data via blocks of variable lengths, and variable transformations of data"
-                        DevTime 4
-                        CodeArt 1
-                        Level 1
-                        Submarkets [2; 0; 0]
-                    }
-                    {
-                        Name "ECC Encryption"
-                        Description "Encrypts data via elliptic curves' algebraic structure, can provide strong security in a small package"
-                        DevTime 7
-                        CodeArt 1
-                        Level 2
-                        Submarkets [2; 2; 2]
-                    }
-                ]
-            }
-            {
-                Name "Network"
-                Spec Network
-                Unlock 1985
-                DevTime 3
-                Submarkets [1; 1; 1]
-                CodeArt 1
-                Server 0.001
-                Optional True
-                Features
-                    [
-                        {
-                            Name "Remote Camera Access"
-                            Description "Allows for users to remotely access their cameras from anywhere"
-                            DevTime 3
-                            CodeArt 1
-                            Level 1
-                            Server 0.005
-                            Submarkets [1; 0; 0]
-                        }
-                        {
-                            Name "802.11 WiFi"
-                            Description "Allows the user to wirelessly connect to their cameras"
-                            DevTime 2
-                            CodeArt 1
-                            Level 1
-                            Unlock 1997
-                            Server 0.002
-                            Submarkets [1; 1; 1]
-                        }
-                        {
-                            Name "802.11b Wifi"
-                            Description "Allows for slightly faster wifi compared to its prior version"
-                            DevTime 2
-                            CodeArt 1
-                            Level 1
-                            Unlock 1999
-                            Server 0.011
-                            Submarkets [1.1; 1.1; 1.1]
-                        }
-                        {
-                            Name "802.11a Wifi"
-                            Description "Allows for a bit faster wifi compared to 802.11b"
-                            DevTime 2
-                            CodeArt 1
-                            Level 1
-                            Unlock 1999
-                            Server 0.054
-                            Submarkets [1.2; 1.2; 1.2]
-                        }
-                        {
-                            Name "802.11g"
-                            Description "Allows for improved wifi compared to 802.11a"
-                            DevTime 2
-                            CodeArt 1
-                            Level 1
-                            Unlock 2003
-                            Server 0.054
-                            Submarkets [1.3; 1.3; 1.3]
-                        }
-                        {
-                            Name "802.11n"
-                            Description "Allows for a more robust wifi connection then its predecessor"
-                            DevTime 3
-                            CodeArt 1
-                            Level 2
-                            Server .6
-                            Unlock 2009
-                            Submarkets [1.6; 1.6; 1.6]
-                        }
-                        {
-                            Name "802.11.ac"
-                            Description "Allows for a fast-ish connection wirelessly"
-                            DevTime 3
-                            CodeArt 1
-                            Level 2
-                            Unlock 2013
-                            Server 6.933
-                            Submarkets [1.8; 1.8; 1.8]
-                        }
-                        {
-                            Name "802.11.ax"
-                            Description "Allows for lightning quick connections wirelessly"
-                            DevTime 4
-                            CodeArt 1
-                            Level 2
-                            Unlock 2021
-                            Server 9.608
-                            Submarkets [2; 2; 2]
-                        }
-                        {
-                            Name "P802.11be"
-                            Description "The fastest wifi can get"
-                            DevTime 6
-                            Unlock 2024
-                            CodeArt 1
-                            Level 2
-                            Server 46
-                            Submarkets [2.5; 2.5; 2.5]
-                        }
-                    ]
-            }
-            {
-                Name "Video"
-                Spec Video
-                DevTime 3
-                Submarkets[1; 1; 1]
-                CodeArt 1
-                Features 
-                    [
-                        {
-                            Name "480p SD"
-                            Description "Standard Definition Video Resolution"
-                            DevTime 1
-                            CodeArt 1
-                            Level 1
-                            Submarkets [1; 1; 1]
-                        }
-                        {
-                            Name "576p PAL"
-                            Description "Phase Alternating Line Video Resolution"
-                            DevTime 1.2
-                            CodeArt 1
-                            Level 1
-                            Submarkets [1.1; 1.1; 1.1]
-                        }
-                        {
-                            Name "1080i"
-                            Description "Interlaced Scan Video Resolution"
-                            DevTime 1.3
-                            CodeArt 1
-                            Level 1
-                            Unlock 1998
-                            Submarkets [ 1.2 ; 1.2 ; 1.2]
-                        }
-                        {
-                            Name "1440p QHD"
-                            Description "Quad High Definition Video Resolution"
-                            DevTime 2
-                            CodeArt 1
-                            Level 1
-                            Unlock 2010
-                            Submarkets [ 1.5 ; 1.5 ; 1.5 ]
-                        }
-                        {
-                            Name "4K UHD"
-                            Description "Ultra High Definition Video Resolution"
-                            DevTime 2.5
-                            CodeArt 1
-                            Level 2
-                            Unlock 2013
-                            Submarkets [ 1.7; 1.7; 1.7]
-                        }
-                        {
-                            Name "5K"
-                            Description "Five Thousand Pixels!"
-                            DevTime 2.6
-                            CodeArt 1
-                            Level 2
-                            Unlock 2014
-                            Submarkets [ 1.8; 1.8; 1.8]
-                        }
-                        {
-                            Name "6K"
-                            Description "Six Thousand Pixels!"
-                            DevTime 3
-                            CodeArt 1
-                            Level 2
-                            Unlock 2015
-                            Submarkets [ 1.9 ; 1.9 ; 1.9]
-                        }
-                        {
-                            Name "8K UHD"
-                            Description "Eight Thousand Ultra High Definition Pixels!"
-                            DevTime 4
-                            CodeArt 1
-                            Level 2
-                            Unlock 2016
-                            Submarkets [ 2; 2; 2]
-                        }
-                        {
-                            Name "12K"
-                            Description "Twelve Thousand Pixels!"
-                            DevTime 5
-                            CodeArt 1
-                            Level 2
-                            Unlock 2020
-                            Submarkets [2.2 ; 2.2; 2.2]
-                        }
+    SubmarketNames [Residential; Commercial; Government]
 
-                    ]
-            }
-        ]
+    Features
+    [
+        {
+            Name "System"
+            Spec System
+            DevTime 3
+            CodeArt 1
+            Submarkets [1; 1; 1]
+
+            Features
+            [
+                {
+                    Name "Live Feed Access"
+                    Description "Allows the user to check in on their pets from their computer!"
+                    Level 1
+                    DevTime 3
+                    CodeArt 1
+                    Submarkets [1; 1; 1]
+                }
+                {
+                    Name "Motion Detection Alerts"
+                    Description "Notifies the user when motion is detected"
+                    Level 1
+                    DevTime 3
+                    CodeArt 1
+                    Submarkets [1; 1; 1]
+                }
+                {
+                    Name "Basic Recording"
+                    Description "Provides the user the ability to store short-term footage on-site"
+                    Level 1
+                    DevTime 2
+                    CodeArt 1
+                    Submarkets [1; 0; 0]
+                }
+                {
+                    Name "Mobile App Support"
+                    Description "Allows the user to manage their cameras from anywhere!"
+                    Level 2
+                    DevTime 5
+                    CodeArt 1
+                    Submarkets [2; 0; 0]
+                }
+                {
+                    Name "One Way Audio"
+                    Description "Allows the user to hear through the camera"
+                    Level 2
+                    DevTime 4
+                    CodeArt 1
+                    Submarkets [2; 1; 0]
+                }
+                {
+                    Name "Smart Home Integration"
+                    Description "Allows the user to connect the camera system to their home assistants"
+                    Level 2
+                    DevTime 5
+                    CodeArt 1
+                    Submarkets [2; 0; 0]
+                }
+                {
+                    Name "Facial Recognition (Basic)"
+                    Description "Allows for basic facial recognitions"
+                    Level 2
+                    DevTime 5
+                    CodeArt 1
+                    Submarkets [2; 0; 0]
+                }
+                {
+                    Name "Multi-Camera Support"
+                    Description "Allows for multiple cameras to be set up on one system"
+                    Level 1
+                    DevTime 4
+                    CodeArt 1
+                    Submarkets [1; 1; 1]
+                }
+                {
+                    Name "Customer Traffic Heatmaps"
+                    Description "Analyzes consumer traffic flow in camera view"
+                    Level 2
+                    DevTime 5
+                    CodeArt 1
+                    Submarkets [0; 2; 0]
+                }
+                {
+                    Name "Incident Flagging"
+                    Description "Flags suspicious clips for organizations to analyze"
+                    Level 1
+                    DevTime 3
+                    CodeArt 1
+                    Submarkets [0; 2; 2]
+                }
+                {
+                    Name "Threat Detection"
+                    Description "Recognizes illegal doings or dangerous behavior"
+                    Level 1
+                    DevTime 4
+                    CodeArt 1
+                    Submarkets [0; 1; 2]
+                }
+                {
+                    Name "Facial Recognition (High Accuracy)"
+                    Description "Recognizes faces that can then be used for criminal database lookups"
+                    Level 2
+                    DevTime 4
+                    CodeArt 1
+                    Submarkets [0; 1; 2]
+                }
+                {
+                    Name "License Plate Recognition"
+                    Description "Recognizes license plates and can analyze them automatically"
+                    Level 2
+                    DevTime 6
+                    CodeArt 1
+                    Submarkets [0; 0; 2]
+                }
+                {
+                    Name "Mass Surveillance Support"
+                    Description "Allows the user to handle hundreds to thousands of video feeds"
+                    Level 2
+                    DevTime 4
+                    CodeArt 1
+                    Submarkets [0; 0; 2]
+                }
+            ]
+        }
+        {
+            Name "Security"
+            Spec Security
+            Description "Features that enchances the security of the system"
+            DevTime 2
+            CodeArt 1
+            Submarkets [1; 1; 1]
+
+            Features
+            [
+                {
+                    Name "User Access Levels"
+                    Description "Allows user to assign cameras based on different roles"
+                    Level 2
+                    DevTime 4
+                    CodeArt 1
+                    Submarkets [0; 1; 2]
+                }
+                {
+                    Name "Audit Trail"
+                    Description "Logs who accessed or modified footage"
+                    Level 1
+                    DevTime 3
+                    CodeArt 1
+                    Submarkets [0; 1; 1]
+                }
+                {
+                    Name "End to End Encryption"
+                    Description "Ensures data passed to other devices is fully encrypted"
+                    Level 2
+                    DevTime 6
+                    CodeArt 1
+                    Submarkets [2; 2; 2]
+                }
+            ]
+        }
+        {
+            Name "Network"
+            Spec Network
+            Unlock 1985
+            DevTime 3
+            CodeArt 1
+            Server 0.001
+            Optional True
+            Submarkets [1; 1; 1]
+
+            Features
+            [
+                {
+                    Name "Remote Camera Access"
+                    Description "Allows for users to remotely access their cameras from anywhere"
+                    Level 1
+                    DevTime 3
+                    CodeArt 1
+                    Server 0.005
+                    Submarkets [1; 0; 0]
+                }
+                {
+                    Name "802.11 WiFi"
+                    Description "Allows the user to wirelessly connect to their cameras"
+                    Level 1
+                    DevTime 2
+                    CodeArt 1
+                    Unlock 1997
+                    Server 0.002
+                    Submarkets [1; 1; 1]
+                }
+                {
+                    Name "802.11b Wifi"
+                    Description "Allows for slightly faster wifi compared to its prior version"
+                    Level 1
+                    DevTime 2
+                    CodeArt 1
+                    Unlock 1999
+                    Server 0.011
+                    Submarkets [1.1; 1.1; 1.1]
+                }
+                {
+                    Name "802.11a Wifi"
+                    Description "Allows for a bit faster wifi compared to 802.11b"
+                    Level 1
+                    DevTime 2
+                    CodeArt 1
+                    Unlock 1999
+                    Server 0.054
+                    Submarkets [1.2; 1.2; 1.2]
+                }
+                {
+                    Name "802.11g"
+                    Description "Allows for improved wifi compared to 802.11a"
+                    Level 1
+                    DevTime 2
+                    CodeArt 1
+                    Unlock 2003
+                    Server 0.054
+                    Submarkets [1.3; 1.3; 1.3]
+                }
+                {
+                    Name "802.11n"
+                    Description "Allows for a more robust wifi connection than its predecessor"
+                    Level 2
+                    DevTime 3
+                    CodeArt 1
+                    Unlock 2009
+                    Server 0.6
+                    Submarkets [1.6; 1.6; 1.6]
+                }
+                {
+                    Name "802.11.ac"
+                    Description "Allows for a fast-ish connection wirelessly"
+                    Level 2
+                    DevTime 3
+                    CodeArt 1
+                    Unlock 2013
+                    Server 6.933
+                    Submarkets [1.8; 1.8; 1.8]
+                }
+                {
+                    Name "802.11.ax"
+                    Description "Allows for lightning quick connections wirelessly"
+                    Level 2
+                    DevTime 4
+                    CodeArt 1
+                    Unlock 2021
+                    Server 9.608
+                    Submarkets [2; 2; 2]
+                }
+                {
+                    Name "P802.11be"
+                    Description "The fastest wifi can get"
+                    Level 2
+                    DevTime 6
+                    CodeArt 1
+                    Unlock 2024
+                    Server 46
+                    Submarkets [2.5; 2.5; 2.5]
+                }
+            ]
+        }
+        {
+            Name "Video"
+            Spec Video
+            DevTime 3
+            CodeArt 1
+            Submarkets [1; 1; 1]
+
+            Features
+            [
+                {
+                    Name "480p SD"
+                    Description "Standard Definition Video Resolution"
+                    Level 1
+                    DevTime 1
+                    CodeArt 1
+                    Submarkets [1; 1; 1]
+                }
+                {
+                    Name "576p PAL"
+                    Description "Phase Alternating Line Video Resolution"
+                    Level 1
+                    DevTime 1.2
+                    CodeArt 1
+                    Submarkets [1.1; 1.1; 1.1]
+                }
+                {
+                    Name "1080i"
+                    Description "Interlaced Scan Video Resolution"
+                    Level 1
+                    DevTime 1.3
+                    CodeArt 1
+                    Unlock 1998
+                    Submarkets [1.2; 1.2; 1.2]
+                }
+                {
+                    Name "1440p QHD"
+                    Description "Quad High Definition Video Resolution"
+                    Level 1
+                    DevTime 2
+                    CodeArt 1
+                    Unlock 2010
+                    Submarkets [1.5; 1.5; 1.5]
+                }
+                {
+                    Name "4K UHD"
+                    Description "Ultra High Definition Video Resolution"
+                    Level 2
+                    DevTime 2.5
+                    CodeArt 1
+                    Unlock 2013
+                    Submarkets [1.7; 1.7; 1.7]
+                }
+                {
+                    Name "5K"
+                    Description "Five Thousand Pixels!"
+                    Level 2
+                    DevTime 2.6
+                    CodeArt 1
+                    Unlock 2014
+                    Submarkets [1.8; 1.8; 1.8]
+                }
+                {
+                    Name "6K"
+                    Description "Six Thousand Pixels!"
+                    Level 2
+                    DevTime 3
+                    CodeArt 1
+                    Unlock 2015
+                    Submarkets [1.9; 1.9; 1.9]
+                }
+                {
+                    Name "8K UHD"
+                    Description "Eight Thousand Ultra High Definition Pixels!"
+                    Level 2
+                    DevTime 4
+                    CodeArt 1
+                    Unlock 2016
+                    Submarkets [2; 2; 2]
+                }
+                {
+                    Name "12K"
+                    Description "Twelve Thousand Pixels!"
+                    Level 2
+                    DevTime 5
+                    CodeArt 1
+                    Unlock 2020
+                    Submarkets [2.2; 2.2; 2.2]
+                }
+            ]
+        }
+    ]
 }

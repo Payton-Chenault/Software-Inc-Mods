@@ -1,0 +1,254 @@
+SoftwareType
+    {
+        Name "Online Banking Platform"
+        Description "What every store needs for online transactions"
+        OneClient False
+        InHouse False
+        Random 0.25
+        OptimalDevTime 36
+        Unlock 1985
+        OSSupport [Computer; Phone]
+        SubmarketNames[Security; Ease of Use; Availability]
+        Categories
+            [
+                {
+                    Name "Business"
+                    Description "The Perfect Software for your Businesses' Online Banking Needs!"
+                    IdealPrice 110
+                    Popularity 0.75
+                    Retention 24
+                    Iterative 0.5
+                    Submarkets [1; 4; 3]
+                    Server 0.01
+                    NameGenerator moneyplatformonlinenaminggen
+                }
+                {
+                    Name "Individual"
+                    Description "The Start of a New Era of Personal Finance"
+                    IdealPrice 90
+                    Popularity 0.90
+                    Retention 36
+                    Iterative 0.7
+                    Server 0.01
+                    Submarkets [2; 2; 4]
+                }
+            ]
+        Features
+            [
+                {
+                    Name "System"
+                    Spec System
+                    Submarkets [1; 1; 1]
+                    Features
+                        [
+                            {
+                                Name "Audit Logging"
+                                Description "Records all actions for fraud investigation or rollback"
+                                Level 1
+                                DevTime 4
+                                CodeArt 1
+                                Submarkets[1; 0; 0]
+                            }
+
+                            {
+                                Name "Rate Limiting & Throttling"
+                                Description "Prevents abuse or DDoS Attacks"
+                                Level 1
+                                DevTime 4
+                                CodeArt 1
+                                Submarkets[1; 0; 1]
+                            }
+
+                            {
+                                Name "Microservice Architecture Support"
+                                Description "Allows Systems to Scale Independently"\
+                                Level 1
+                                DevTime 3
+                                CodeArt 1
+                                Submarkets[0; 0; 1]
+                            }
+
+                            {
+                                Name "User Behavior Tracking"
+                                Description "Monitors Patterns to detect fraud or improve UX"
+                                Level 2
+                                DevTime 5
+                                CodeArt 1
+                                Submarkets[2; 2; 0]
+                            }
+                        ]
+                }
+
+                {
+                    Name "Security"
+                    Spec Security
+                    Submarkets[1; 0; 0]
+                    Features
+                        [
+                            {
+                                Name "End to End Encryption"
+                                Description "Ensures data passed over devices are secure"
+                                Level 1
+                                DevTime 3
+                                CodeArt 1
+                                Submarkets [1; 0; 0]
+                            }
+
+                            {
+                                Name "Two Factor Authentication"
+                                Description "Double checks the user is who they say they are"
+                                Level 1
+                                DevTime 3 
+                                Submarkets [1; -1; 0]
+                                CodeArt 1
+                                SoftwareCategories[Individual]
+                            }
+
+                            {
+                                Name "Login Attempt Limit"
+                                Description "Locks the account after x amount of failed login attempts"
+                                Level 1
+                                DevTime 3
+                                Submarkets [1; 0; 0]
+                            }
+
+                            {
+                                Name "Security Notifications"
+                                Description "Provides the user real-time alerts for various actions"
+                                Server 0.001
+                                Unlock 1985
+                                DevTime 4
+                                Level 2
+                                Submarkets[1; 2; 1]
+                            }
+
+                            {
+                                Name "Biometric Login"
+                                Description "Allows users to log in via Biometrics"
+                                SoftwareCategories[Individual; 2000]
+                                DevTime 6
+                                Level 2
+                                SubmarketNames[2, 2, 0]
+                            }
+
+                            {
+                                Name "RADIUS Support"
+                                Description "Utilizes RADIUS for organizational transaction operation security"
+                                SoftwareCategories[Business; 1985]
+                                DevTIme 6
+                                Level 2
+                                SubmarketNames[2; 2; 2]
+                            }
+                        ]
+                }
+
+                {
+                    Name "Network"
+                    Spec Network
+                    Optional True
+                    Submarkets [0; 1; 1]
+                    Unlock 1985
+                    Server 0.01
+                    Features
+                        [
+                            {
+                                Name "24/7 Server Availability"
+                                Description "No downtime is acceptable in the world of financess"
+                                DevTime 4
+                                CodeArt 1
+                                Level 1
+                                Submarkets[1; 0; 1]
+                            }
+
+                            {
+                                Name "Offline Notification Queue"
+                                Description "Sends alerts when servers are back to being operational"
+                                DevTime 4
+                                CodeArt 1
+                                Level 1
+                                Submarkets[0; 1; 1]
+                            }
+
+                            {
+                                Name "Load Balancing"
+                                Description "Distributes Traffic Efficiently Under Heavy Usage"
+                                DevTime 6
+                                CodeArt 1
+                                Level 2
+                                Submarkets[2; 2; 2]
+                            }
+
+                            {
+                                Name "Cloud Sync"
+                                Unlock 2000
+                                DevTime 8
+                                CodeArt 1
+                                Level 2
+                                Submarkets[2, 2, 3]
+                            }
+
+                            {
+                                Name "WebSocket Engine"
+                                Description "Live Account Updates Without Refresh"
+                                Level 2
+                                CodeArt 1
+                                DevTime 5
+                                Submarkets[0; 2; 2]
+                            }
+                        ]
+                }
+
+                {
+                    Name "UI"
+                    Spec UI
+                    Submarkets [0; 1; 0]
+                    Features
+                        [
+                            {
+                                Name "Transaction History Table"
+                                Description "A table showing prior transactions"
+                                DevTime 4
+                                CodeArt 1
+                                Level 1
+                                Submarkets[0; 1; 0]
+                            }
+
+                            {
+                                Name "Confirmation Popups"
+                                Description "Popups that warn the user before attempting financial actions"
+                                DevTime 3
+                                CodeArt 1
+                                Level 1
+                                SubmarketNames[0; 1; 0]
+                            }
+
+                            {
+                                Name "Quick Access Shortcuts"
+                                Description "Tabs that allows quick access to a multitude of common items"
+                                DevTime 3
+                                CodeArt 1
+                                Level 1
+                                SubmarketNames[0; 1; 0]
+                            }
+
+                            {
+                                Name "Interactive Financial Timeline"
+                                Description "Scrollable visual history of transactions"
+                                DevTime 5
+                                CodeArt 1
+                                Level 2
+                                SubmarketNames[0; 2; 0]
+                            }
+
+                            {
+                                Name "Voice UI Integration"
+                                Description "Perform tasks utilizing voice commands"
+                                DevTIme 5
+                                CodeArt 1
+                                Level 2
+                                SubmarketNames[-1; 2; 0]
+                            }
+                        ]
+                }
+            ]
+    }

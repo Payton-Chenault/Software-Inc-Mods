@@ -437,8 +437,8 @@ Most software needs an Operating System to run on. When people stop buying a lin
 				]
 			}
 			{
-			Name		Interface
-			Spec		2D
+			Name		UI
+			Spec		UI
 			DevTime		4
 			CodeArt		1
 			Submarkets	[ 1; 0; 1 ]
