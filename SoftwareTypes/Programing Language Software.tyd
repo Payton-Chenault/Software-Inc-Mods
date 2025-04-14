@@ -7,7 +7,7 @@ SoftwareType
     OSSupport Computer
     OneClient False
     InHouse True
-    SubmarketNames [Speed; Effieciency; Safety]
+    SubmarketNames [Speed; Optimization; Safety]
     Categories
         [
             {
@@ -32,6 +32,119 @@ SoftwareType
                 IdealPrice 100
                 Iterative 1
                 NameGenerator ProgrammingLanguageHighLevelNameGen
+            }
+        ]
+    Features
+        [
+            {
+                Name "System"
+                Spec System
+                DevTime 3
+                Submarkets [1; 1; 1]
+                CodeArt 1
+                Features
+                    [
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Manual Memory Allocation"
+                            Description "User allocates and deallocates memory by hand (malloc())"
+                            DevTime 5
+                            Submarkets [4; 4; 3]
+                            CodeArt 1
+                            Level 1
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Inline Assembly Integration"
+                            Description "Allows embedding of raw assembly within program's code (__asm__(\"movl $5, %0\" : \"=r\"(val)))"
+                            DevTime 5
+                            Submarkets [5;5;0]
+                            CodeArt 1
+                            Level 2
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Compile Time Function Execution"
+                            Description "Functions or expressions are evaluated during compilation (int y = sqrt(4) // Computes 2 at compile time)"
+                            DevTime 6
+                            Submarkets [5; 4; 4]
+                            CodeArt 1
+                            Level 2
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "System Call Invocation"
+                            Description "Allows direct request to functions from the OS's kernel (write(1, \"hello!\\n\", 6);)"
+                            DevTime 2
+                            Submarkets [3;2;2]
+                            CodeArt 1 
+                            Level 1
+
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Memory Alignment Primitives"
+                            Description "Ensures data is stored in memory at correctly alligned addresses (struct __attribute__((aligned(16))) AlignedStruct { int data[4]; })"
+                            DevTime 5
+                            Submarkets [4; 5; 3]
+                            CodeArt 1
+                            Level 2
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Kernel-Level API Support"
+                            Description "Direct Access to Kernel-space functions (int init_module(void) { printk(KERN_INFO \"Hello from the kernel :D\\n\"); return 0;)"
+                            DevTime 6
+                            Submarkets [4; 3; 0]
+                            CodeArt 1
+                            Level 2
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Opaque Types"
+                            Description "A type whose implementation details are hidden from the user (typedef struct HiddenStruct Hidden; Hidden* create_hidden(); void destroy_hidden(Hidden*);)"
+                            DevTime 6
+                            Submarkets [ 2; 2; 7]
+                            CodeArt 1
+                            Level 1
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Manual Scope Control"
+                            Description "Explicit managing when reasources are acquired and released (f, _ := os.Open(\"file.txt\") defer f.Close())"
+                            DevTime 4
+                            Submarkets [4;3;3]
+                            CodeArt 1
+                            Level 1
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Structs"
+                            Description "Allows Composite Data Types (struct Point {int x; int y;};)"
+                            DevTime 5
+                            Submarkets [ 4; 3; 4]
+                            CodeArt 1
+                            Level 1
+                        }
+
+                        {
+                            SoftwareCategories [Low Level]
+                            Name "Loop Unrolling"
+                            Description "Manually or automatically expands loops to reduce overhead (for (int i = 0; i < 4; i++) a[i] *= 2;  ->  a[0] *= 2; a[1] *= 2 ...)"
+                            DevTime 4
+                            Submarkets [4 ; 4; 3]
+                            CodeArt 1
+                            Level 1
+                        }
+                    ]
             }
         ]
 }
