@@ -172,15 +172,27 @@ class ModCreatorApp:
         return frame
 
     def export_mod(self):
-        print("Exporting mod...")  # Placeholder
+        mod_data = {}
 
-    def show_frame(self, name):
-        frame = self.frames.get(name)
-        if frame:
-            frame.tkraise()
+        # Collect data from Software Type frame
+        software_frame = self.frames["Software Type"]
+        software_entries = software_frame.winfo_children()
+        mod_data["Software Type"] = {}
+        for i in range(1, len(software_entries), 2):
+            if isinstance(software_entries[i], ctk.CTkEntry):  # If it's an entry widget
+                entry_value = software_entries[i].get()  # Get the value from the entry widget
+                mod_data["Software Type"][i] = entry_value  # Store by index or label if needed
 
+        # Collect data from Spec Features frame
+        spec_data = []
+        for row in self.spec_feature_rows:
+            row_data = {}
+            for i, entry in enumerate(row):
+                if isinstance(entry, ctk.CTkEntry):  # If it's an entry widget
+                    row_data[i] = entry.get()  # Store by index
+                elif isinstance(entry, ctk.CTkOptionMenu):  # If it's an option menu
+                    row_data[i] = entry.get()  # Store by index
+            spec_data.append(row_data)
+        mod_data["Spec Features"] = spec_data
 
-if __name__ == "__main__":
-    root = ctk.CTk()
-    app = ModCreatorApp(root)
-    root.mainloop()
+        # Collect data
